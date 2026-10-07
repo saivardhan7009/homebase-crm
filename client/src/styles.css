@@ -1,0 +1,18 @@
+:root{--bg:#f4f6f9;--card:#fff;--ink:#1c2733;--mute:#6b7785;--pri:#1f5eff;--line:#e3e8ef}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,Segoe UI,sans-serif;background:var(--bg);color:var(--ink)}
+.app{display:grid;grid-template-columns:220px 1fr;min-height:100vh}
+nav{background:#0f1b2d;color:#fff;padding:20px 12px}nav h1{font-size:18px;margin:0 8px 20px}
+nav button{display:block;width:100%;text-align:left;background:none;border:0;color:#b8c4d6;padding:10px;border-radius:8px;font-size:15px;cursor:pointer}
+nav button.on,nav button:hover{background:#1f2f4a;color:#fff}
+main{padding:24px;overflow-x:auto}h2{margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-bottom:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:16px}
+.stat b{display:block;font-size:26px}.stat span{color:var(--mute);font-size:13px}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line)}th{color:var(--mute);font-weight:600}
+input,select,button.pri{padding:9px 10px;border:1px solid var(--line);border-radius:8px;font-size:14px}
+button.pri{background:var(--pri);color:#fff;border:0;cursor:pointer}.row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.bar{display:flex;align-items:center;gap:8px;margin:6px 0;font-size:13px}.bar i{display:block;height:14px;background:var(--pri);border-radius:7px;min-width:4px}
+.tag{padding:2px 8px;border-radius:10px;background:#e8eefc;color:var(--pri);font-size:12px}.late{color:#d33;font-weight:600}
+.chat{max-width:640px}.msgs{height:340px;overflow:auto;display:flex;flex-direction:column;gap:8px;margin-bottom:10px}
+.m{padding:9px 12px;border-radius:12px;max-width:85%;white-space:pre-wrap;font-size:14px}.m.u{align-self:flex-end;background:var(--pri);color:#fff}.m.a{background:#eef1f6}
+@media(max-width:760px){.app{grid-template-columns:1fr}nav{display:flex;overflow-x:auto;gap:4px;padding:8px}nav h1{display:none}nav button{white-space:nowrap;width:auto}main{padding:14px}}
